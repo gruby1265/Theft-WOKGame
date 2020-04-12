@@ -1681,6 +1681,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4769104680181618041, guid: eb178b2922eccfd438dcb3892036f417,
         type: 3}
+      propertyPath: point.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769104680181618041, guid: eb178b2922eccfd438dcb3892036f417,
+        type: 3}
       propertyPath: point.Array.data[0]
       value: 
       objectReference: {fileID: 1506668379}
@@ -1697,7 +1702,7 @@ PrefabInstance:
     - target: {fileID: 4769104680181618043, guid: eb178b2922eccfd438dcb3892036f417,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.43
+      value: -1.53
       objectReference: {fileID: 0}
     - target: {fileID: 4769104680181618043, guid: eb178b2922eccfd438dcb3892036f417,
         type: 3}
