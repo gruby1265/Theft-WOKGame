@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class enemyMove : MonoBehaviour
 {
-    [SerializeField]
-    Transform[] point;
+    public Transform[] point;
     Transform target;
     Rigidbody2D rb;
 
