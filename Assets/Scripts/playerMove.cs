@@ -39,6 +39,7 @@ public class playerMove : MonoBehaviour
     void Update()
     {
         move = Input.GetAxisRaw("Horizontal");
+        anim.SetFloat("speedAnim",Mathf.Abs(move));
         makeJump = Input.GetKey(KeyCode.W);
     }
 
@@ -60,9 +61,11 @@ public class playerMove : MonoBehaviour
             {
                 speed *= 0.1f;
             }
+            anim.SetBool("isCrouchAnim", true);
             head.enabled = false;
         }else if (!isRoofed && !head.enabled)
         {
+            anim.SetBool("isCrouchAnim", false);
             head.enabled = true;
             speed *= 10f;
         }
