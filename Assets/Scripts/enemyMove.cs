@@ -31,7 +31,7 @@ public class enemyMove : MonoBehaviour
         {
             flip();
             i++;
-            if (i == 2)
+            if (i == point.Length)
             {
                 i = 0;
             }
