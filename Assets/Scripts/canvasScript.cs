@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;//!!!
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class canvasScript : MonoBehaviour
 {
@@ -68,6 +69,6 @@ public class canvasScript : MonoBehaviour
     public void exit()
     {
         Debug.Log("Exit");
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 }
