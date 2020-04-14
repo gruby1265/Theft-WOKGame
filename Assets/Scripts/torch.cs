@@ -9,7 +9,7 @@ public class torch : MonoBehaviour
 
     void Start()
     {
-        col = transform.GetChild(0).gameObject.GetComponent<BoxCollider2D>();
+        col = transform.GetChild(0).gameObject.GetComponent<PolygonCollider2D>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
