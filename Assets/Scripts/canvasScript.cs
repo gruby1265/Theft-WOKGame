@@ -9,6 +9,7 @@ public class canvasScript : MonoBehaviour
 {
     GameObject textGo;
     TextMeshProUGUI score;
+    GameObject paintingMenu;
 
     GameObject pauseMenu;
     bool isPaused;
@@ -16,7 +17,8 @@ public class canvasScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score = transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
+        paintingMenu = transform.GetChild(1).gameObject;
+        score = transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>();
         pauseMenu = transform.GetChild(0).gameObject;
 
         isPaused = false;
@@ -40,6 +42,14 @@ public class canvasScript : MonoBehaviour
 
 
         score.text = GameManager.score.ToString();
+        if (GameManager.onPainting){
+            
+            //Time.timeScale = 0f;
+            paintingMenu.SetActive(true);
+        }else{
+            //Time.timeScale = 1f;
+            paintingMenu.SetActive(false);
+        }
     }
 
     void pause()
