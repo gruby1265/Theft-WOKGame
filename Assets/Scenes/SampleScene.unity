@@ -50717,11 +50717,11 @@ GameObject:
   - component: {fileID: 558367208}
   m_Layer: 5
   m_Name: paintingMenu
-  m_TagString: Untagged
+  m_TagString: PaintingMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &558367207
 RectTransform:
   m_ObjectHideFlags: 0
@@ -50753,6 +50753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98df7f2e262920243b34bb6e80105db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obrSender: {fileID: 0}
 --- !u!1 &561925049
 GameObject:
   m_ObjectHideFlags: 0
@@ -73779,7 +73780,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obr: {fileID: 11400000, guid: 542052fa33c79ab4f8103035d27d1788, type: 2}
-  ptds: {fileID: 558367208}
 --- !u!61 &1910964426
 BoxCollider2D:
   m_ObjectHideFlags: 0
