@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class paintingDisplay : MonoBehaviour
 {
-    //obraz obr;
-    //obrazSender obrSend;
+    obraz obr;
+    public obrazSender obrSender;
+
+    bool takenData;
+
     void Start()
     {
-        //obrSend.ptds = this;
+        takenData = false;
     }
 
     void Update()
     {
-
+        if (GameManager.onPainting && !takenData)
+        {
+            obr = obrSender.obr;
+            Debug.Log(obr.author);
+            takenData = true;
+        }
     }
 }
