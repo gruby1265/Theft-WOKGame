@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class paintingDisplay : MonoBehaviour
 {
-    obraz obr;
-    obrazSender obrSend;
+    //obraz obr;
+    //obrazSender obrSend;
     void Start()
     {
-        obrSend.ptds = this;
+        //obrSend.ptds = this;
     }
 
     void Update()
