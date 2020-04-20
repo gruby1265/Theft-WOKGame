@@ -19,6 +19,7 @@ public class obrazSender : MonoBehaviour
         if (other.tag == "Player"){
             GameManager.onPainting = true;
             ptds.obrSender = this;
+            GetComponent<Collider2D>().enabled = false;
         }
     }
 }

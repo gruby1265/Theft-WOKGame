@@ -15,9 +15,14 @@ public class canvasScript : MonoBehaviour
     bool isPaused;
 
     // Start is called before the first frame update
+
+    void Awake(){
+        paintingMenu = transform.GetChild(1).gameObject;
+        paintingMenu.SetActive(true);
+    }
+
     void Start()
     {
-        paintingMenu = transform.GetChild(1).gameObject;
         score = transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>();
         pauseMenu = transform.GetChild(0).gameObject;
 
@@ -43,11 +48,9 @@ public class canvasScript : MonoBehaviour
 
         score.text = GameManager.score.ToString();
         if (GameManager.onPainting){
-            
-            //Time.timeScale = 0f;
+            Time.timeScale = 0f;
             paintingMenu.SetActive(true);
         }else{
-            //Time.timeScale = 1f;
             paintingMenu.SetActive(false);
         }
     }
@@ -81,4 +84,5 @@ public class canvasScript : MonoBehaviour
         Debug.Log("Exit");
         SceneManager.LoadScene(0);
     }
+
 }
