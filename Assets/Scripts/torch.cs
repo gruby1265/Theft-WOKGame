@@ -11,7 +11,7 @@ public class torch : MonoBehaviour
     void Start()
     {
         playerReference = GameObject.FindWithTag("Player").GetComponent<playerMove>();
-        col = transform.GetChild(0).gameObject.GetComponent<PolygonCollider2D>();
+        col = GetComponent<PolygonCollider2D>();
     }
 
     void OnTriggerEnter2D(Collider2D other)

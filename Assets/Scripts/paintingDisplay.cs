@@ -17,9 +17,9 @@ public class paintingDisplay : MonoBehaviour
     void Start()
     {
         takenData = false;
-        author = transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
-        description = transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
-        obraz = transform.GetChild(2).gameObject.GetComponent<Image>();
+        author = transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
+        description = transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>();
+        obraz = transform.GetChild(3).gameObject.GetComponent<Image>();
     }
 
     void Update()
