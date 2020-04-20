@@ -10,6 +10,7 @@ TagManager:
   - Platform
   - Ladder
   - Obraz
+  - PaintingMenu
   layers:
   - Default
   - TransparentFX
