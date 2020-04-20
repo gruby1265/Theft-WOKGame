@@ -161,6 +161,16 @@ public class playerMove : MonoBehaviour
         }
     }
 
+    public void hurt(float hurtTime){
+        StartCoroutine(blinking(hurtTime));
+    }
+
+    IEnumerator blinking(float hurtTime){
+        anim.SetLayerWeight(1, 1);
+        yield return new WaitForSeconds(hurtTime);
+        anim.SetLayerWeight(1, 0);
+    }
+    
     public void takeKey()
     {
         Debug.Log("mam klucz");
