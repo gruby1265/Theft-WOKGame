@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f1d549f4aa80b49afdc2da074030ea, type: 3}
+  m_Name: Krzyk
+  m_EditorClassIdentifier: 
+  descripction: "\"Krzyk\" - Krzyk to popularna nazwa nadana ka\u017Cdej z czterech
+    wersji kompozycji, stworzonej zar\xF3wno jako obrazy, jak i pastele. Autorem
+    jest ekspresjonistyczny artysta Edvard Munch, kt\xF3ry go namalowa\u0142 w latach
+    1893\u20131910."
+  author: Edvard Munch
+  painting: {fileID: 21300000, guid: 55761d2391f3cec4ea6bb31e1376e508, type: 3}

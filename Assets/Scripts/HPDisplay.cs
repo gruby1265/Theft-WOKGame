@@ -14,7 +14,7 @@ public class HPDisplay : MonoBehaviour
         sprRend = GetComponent<SpriteRenderer>();
         sprRend.size = new Vector2(GameManager.HP, 1f);
         HPDisplayed = GameManager.HP;
-        transform.position = new Vector2(transform.position.x + transform.localScale.x * (float)GameManager.HP / 112f, transform.position.y);
+        transform.position = new Vector2(transform.position.x + transform.localScale.x * (float)GameManager.HP / 126f, transform.position.y);
     }
 
     // Update is called once per frame
@@ -28,11 +28,11 @@ public class HPDisplay : MonoBehaviour
             sprRend.size = new Vector2(GameManager.HP, 1f);
             if(HPDisplayed > GameManager.HP)
             {
-                transform.position = new Vector2(transform.position.x - transform.localScale.x / 112f, transform.position.y);
+                transform.position = new Vector2(transform.position.x - transform.localScale.x / 126f, transform.position.y);
             }
             else
             {
-                transform.position = new Vector2(transform.position.x + transform.localScale.x / 112f, transform.position.y);
+                transform.position = new Vector2(transform.position.x + transform.localScale.x / 126f, transform.position.y);
             }
             HPDisplayed = GameManager.HP;
         }
