@@ -37,6 +37,7 @@ public class paintingDisplay : MonoBehaviour
 
     public void closePaintingDispay(){
         Time.timeScale = 1f;
+        takenData = false;
         GameManager.onPainting = false;
         gameObject.SetActive(false);
     }

@@ -173,7 +173,11 @@ public class playerMove : MonoBehaviour
     
     public void takeKey()
     {
-        Debug.Log("mam klucz");
         hasKey = true;
+    }
+
+    public bool doIHaveKey()
+    {
+        return hasKey;
     }
 }

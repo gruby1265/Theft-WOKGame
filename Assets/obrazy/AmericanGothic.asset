@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f1d549f4aa80b49afdc2da074030ea, type: 3}
+  m_Name: AmericanGothic
+  m_EditorClassIdentifier: 
+  descripction: "\"Panny z Avinionu\" - Obraz Panny z Avignonu z 1907 roku, to jeden
+    z najbardziej znanych obraz\xF3w Pabla Picassa. Wbrew swojej nazwie nie przedstawia
+    francuskich dziewczyn, a pi\u0119\u0107 katalo\u0144skich prostytutek z Barcelony."
+  author: Pablo Picasso
+  painting: {fileID: 21300000, guid: 0d8dc8fa38473594a84e54c26404f363, type: 3}

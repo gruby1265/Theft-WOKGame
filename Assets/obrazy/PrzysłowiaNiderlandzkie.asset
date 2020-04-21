@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f1d549f4aa80b49afdc2da074030ea, type: 3}
+  m_Name: "Przys\u0142owiaNiderlandzkie"
+  m_EditorClassIdentifier: 
+  descripction: "\"Przys\u0142owia Niderlandzkie\" - Obraz olejny Przys\u0142owia
+    niderlandzkie z 1559 roku autorstwa flamandzkiego artysty Pietera Bruegela Starszego.
+    Obraz przedstawia scen\u0119, w kt\xF3rej ludzie, zwierz\u0119ta i przedmioty,
+    przedstawiaj\u0105 ilustracje przys\u0142\xF3w i idiom\xF3w w lokalnym j\u0119zyku. 
+    Do tej pory uda\u0142o si\u0119 zidentyfikowa\u0107 112 przys\u0142\xF3w i idiom\xF3w,
+    aczkolwiek mo\u017Ce ich by\u0107 tam wi\u0119cej."
+  author: Pieter Bruegel Starszy
+  painting: {fileID: 21300000, guid: c82d04b5c7c85344d85e322e4a80f5c7, type: 3}
