@@ -5,11 +5,13 @@ using UnityEngine;
 public class torch : MonoBehaviour
 {
     Collider2D col;
+    playerMove playerReference;
     bool damageTaken = false;
 
     void Start()
     {
-        col = transform.GetChild(0).gameObject.GetComponent<PolygonCollider2D>();
+        playerReference = GameObject.FindWithTag("Player").GetComponent<playerMove>();
+        col = GetComponent<PolygonCollider2D>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -20,6 +22,7 @@ public class torch : MonoBehaviour
             GameManager.HP--;
             col.enabled = false;
             damageTaken = true;
+            playerReference.hurt(2f);
             Invoke("makeLightAgain", 2f);
         }
     }

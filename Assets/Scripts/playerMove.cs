@@ -31,6 +31,8 @@ public class playerMove : MonoBehaviour
     bool onLadder;
     bool inFrontLadder;
 
+    bool hasKey;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,7 @@ public class playerMove : MonoBehaviour
         anim = GetComponent<Animator>();
         isFRight = true;
         onLadder = false;
+        hasKey = false;
     }
 
     void Update()
@@ -156,5 +159,21 @@ public class playerMove : MonoBehaviour
                 trigStayDone = false;
             }
         }
+    }
+
+    public void hurt(float hurtTime){
+        StartCoroutine(blinking(hurtTime));
+    }
+
+    IEnumerator blinking(float hurtTime){
+        anim.SetLayerWeight(1, 1);
+        yield return new WaitForSeconds(hurtTime);
+        anim.SetLayerWeight(1, 0);
+    }
+    
+    public void takeKey()
+    {
+        Debug.Log("mam klucz");
+        hasKey = true;
     }
 }

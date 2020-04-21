@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f1d549f4aa80b49afdc2da074030ea, type: 3}
   m_Name: pierwszyTest
   m_EditorClassIdentifier: 
-  descripction: "To jest bardzo \u0142adny obraz."
+  descripction: "To jest bardzo \u0142adny"
   author: "Miko\u0142aj \u017Burawski"
   painting: {fileID: 21300000, guid: 8c4f9e2977fa0a144b0cdee1f8f75f75, type: 3}

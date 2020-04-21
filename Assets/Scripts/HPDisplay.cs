@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HPDisplay : MonoBehaviour
 {
@@ -21,6 +22,9 @@ public class HPDisplay : MonoBehaviour
     {
         if(HPDisplayed != GameManager.HP)
         {
+            if (GameManager.HP <= 0){
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
             sprRend.size = new Vector2(GameManager.HP, 1f);
             if(HPDisplayed > GameManager.HP)
             {
