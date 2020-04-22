@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f1d549f4aa80b49afdc2da074030ea, type: 3}
+  m_Name: Saturn
+  m_EditorClassIdentifier: 
+  descripction: "Saturn po\u017Ceraj\u0105cy w\u0142asne dzieci to obraz hiszpa\u0144skiego
+    artysty Francisco Goya. Zgodnie z tradycyjn\u0105 interpretacj\u0105 obraz przedstawia
+    grecki mit Tytana Kronosa. Kronos w obawie, \u017Ce jedno z jego dzieci go odbierze
+    mu tron, zjad\u0142 je po narodzinach. Dzie\u0142o to jest jednym z 14 Czarnych
+    Malowide\u0142, kt\xF3re Goya namalowa\u0142 bezpo\u015Brednio na \u015Bcianach
+    swojego domu w latach 1819\u20131823."
+  author: Francisco Goya
+  painting: {fileID: 21300000, guid: 90676ec5f8d090c4c9c27778c46d867e, type: 3}
