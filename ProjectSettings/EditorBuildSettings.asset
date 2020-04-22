@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: b05208422cec6f340a1b76c24364b7ce
   - enabled: 1
+    path: Assets/Scenes/ulica.unity
+    guid: 42adadc557217354fa4d084411b563c4
+  - enabled: 0
+    path: Assets/Scenes/TestLevel1.unity
+    guid: 4e5118f6fd57b254289f0d6e79673bdd
+  - enabled: 1
     path: Assets/Scenes/1muzeum.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
