@@ -38,6 +38,9 @@ public class paintingDisplay : MonoBehaviour
     public void closePaintingDispay(){
         Time.timeScale = 1f;
         takenData = false;
+        author.text = null;
+        description.text = null;
+        obraz.sprite = null;
         GameManager.onPainting = false;
         gameObject.SetActive(false);
     }
