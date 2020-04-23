@@ -20,12 +20,18 @@ public class paintingDisplay : MonoBehaviour
         author = transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
         description = transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>();
         obraz = transform.GetChild(3).gameObject.GetComponent<Image>();
+        obraz.enabled = false;
+        author.enabled = false;
+        description.enabled = false;
     }
 
     void Update()
     {
         if (GameManager.onPainting && !takenData)
         {
+            obraz.enabled = true;
+            author.enabled = true;
+            description.enabled = true;
             obr = obrSender.obr;
             author.text = obr.author;
             description.text = obr.descripction;
@@ -41,7 +47,11 @@ public class paintingDisplay : MonoBehaviour
         author.text = null;
         description.text = null;
         obraz.sprite = null;
+        obraz.enabled = false;
+        author.enabled = false;
+        description.enabled = false;
         GameManager.onPainting = false;
         gameObject.SetActive(false);
+        GameManager.score += 20;
     }
 }
