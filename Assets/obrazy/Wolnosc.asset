@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f1d549f4aa80b49afdc2da074030ea, type: 3}
+  m_Name: Wolnosc
+  m_EditorClassIdentifier: 
+  descripction: "Obraz(1830) Eugene Delacroix przedstawia personifikacj\u0119 wolno\u015Bci,
+    nazywan\u0105 przez francuz\xF3w Marianne. Marianne \u0142\u0105czy r\xF3\u017Cne
+    klasy kt\xF3re si\u0119 \u0142\u0105cz\u0105 aby szturmowa\u0107 barykad\u0119
+    usian\u0105 cia\u0142ami poleg\u0142ych towarzyszy. Obraz mia\u0142 upami\u0119tni\u0107
+    rewolucj\u0119 lipcow\u0105 w 1830 r., kt\xF3ra obali\u0142a kr\xF3la Francji
+    Karola X. \u0141\u0105cz\u0105c alegori\u0119 ze wsp\xF3\u0142czesnymi elementami,
+    obraz jest ekscytuj\u0105cym przyk\u0142adem stylu romantycznego."
+  author: "Eug\xE8ne Delacroix"
+  painting: {fileID: 21300000, guid: 504affc06db3a6c4683aa9ddc23617fa, type: 3}
