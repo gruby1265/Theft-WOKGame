@@ -7,17 +7,20 @@ using UnityEngine.SceneManagement;
 public class menu : MonoBehaviour
 {
     public AudioMixer audio;
+    public levelManager levelM;
+
+
+    
     public void PlayGame(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        PlayerPrefs.DeleteAll();
+        levelM.LoadNextLevel();
+        //SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void QuitGame(){
         Application.Quit();
     }
 
-    public void ResetPrefs(){
-        PlayerPrefs.DeleteAll();
-    }
 
     public void SetVolume(float volume){
         audio.SetFloat("volume", volume);

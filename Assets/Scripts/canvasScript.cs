@@ -68,20 +68,10 @@ public class canvasScript : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
     }
-
-    public void save()
-    {
-        Debug.Log("Save");
-    }
-
-    public void options()
-    {
-        Debug.Log("Options");
-    }
-
+    
     public void exit()
     {
-        Debug.Log("Exit");
+        Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
 

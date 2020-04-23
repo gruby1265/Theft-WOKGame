@@ -9,6 +9,10 @@ public class loadMeneger : MonoBehaviour
 
     void Start()
     {
+        Load();
+    }
+
+    public void Load(){
         for (int i = 0; i < levelButtons.Length; i++)
         {
             if (i > PlayerPrefs.GetInt("levelReached", 1)-1){
@@ -17,8 +21,4 @@ public class loadMeneger : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        
-    }
 }
