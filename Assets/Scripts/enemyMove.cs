@@ -13,7 +13,6 @@ public class enemyMove : MonoBehaviour
     float speed = 4f;
 
     int i = 0;
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -24,7 +23,6 @@ public class enemyMove : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if(Mathf.Abs(transform.position.x - target.position.x) < 0.1f)
