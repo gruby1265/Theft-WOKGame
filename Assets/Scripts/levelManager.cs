@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class levelManager : MonoBehaviour
 {
+    public Animator anim;
     bool isReached = false;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -12,11 +13,23 @@ public class levelManager : MonoBehaviour
         if(other.tag == "Player")
         {
             if (isReached) return;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            if (PlayerPrefs.GetInt("levelReached", 1) == SceneManager.GetActiveScene().buildIndex){
-                PlayerPrefs.SetInt("levelReached", PlayerPrefs.GetInt("levelReached", 1)+1);
-            }
+            LoadNextLevel();
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            
             isReached = true;
         }
+    }
+
+    public void LoadNextLevel(){
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+    }
+
+    IEnumerator LoadLevel(int levelIndex){
+        anim.SetTrigger("Start");
+        yield return new WaitForSeconds(1f);
+        if (PlayerPrefs.GetInt("levelReached", 1) == SceneManager.GetActiveScene().buildIndex){
+                PlayerPrefs.SetInt("levelReached", PlayerPrefs.GetInt("levelReached", 1)+1);
+            }
+        SceneManager.LoadScene(levelIndex);
     }
 }
