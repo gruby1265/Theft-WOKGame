@@ -14,7 +14,6 @@ public class levelManager : MonoBehaviour
         {
             if (isReached) return;
             LoadNextLevel();
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             
             isReached = true;
         }

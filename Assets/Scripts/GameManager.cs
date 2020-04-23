@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static int score;
     public static int HP;
-    public static int maxHP = 6;
+    public int maxHP = 6;
     public static bool onPainting;
     public static obraz paintingDisp;
 

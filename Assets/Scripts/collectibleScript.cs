@@ -22,13 +22,6 @@ public class collectibleScript : MonoBehaviour
                     GameManager.HP--;
                     Destroy(gameObject);
                     break;
-                case "Healer":
-                    if (GameManager.HP < GameManager.maxHP)
-                    {
-                        GameManager.HP++;
-                        Destroy(gameObject);
-                    }else isCollected = false;
-                    break;
             }
         }
     }
