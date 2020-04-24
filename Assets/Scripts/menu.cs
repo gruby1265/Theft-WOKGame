@@ -18,6 +18,7 @@ public class menu : MonoBehaviour
     }
 
     public void QuitGame(){
+        Debug.Log(PlayerPrefs.GetInt("levelReached", 0));
         Application.Quit();
     }
 

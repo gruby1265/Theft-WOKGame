@@ -24,6 +24,7 @@ public class HPDisplay : MonoBehaviour
         {
             if (GameManager.HP <= 0){
                 GameManager.score -= 10;
+                PlayerPrefs.SetInt("score", GameManager.score);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
             sprRend.size = new Vector2(GameManager.HP, 1f);

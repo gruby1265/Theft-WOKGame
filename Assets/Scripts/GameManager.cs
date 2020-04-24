@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        score = 0;
+        score = PlayerPrefs.GetInt("score", 0);
         HP = maxHP;
         onPainting = false;
     }

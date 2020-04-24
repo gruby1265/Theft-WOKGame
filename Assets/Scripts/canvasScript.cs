@@ -47,6 +47,7 @@ public class canvasScript : MonoBehaviour
 
 
         score.text = GameManager.score.ToString();
+        PlayerPrefs.SetInt("score", GameManager.score);
         if (GameManager.onPainting){
             Time.timeScale = 0f;
             paintingMenu.SetActive(true);
