@@ -48,6 +48,7 @@ public class playerMove : MonoBehaviour
         move = Input.GetAxisRaw("Horizontal");
         anim.SetFloat("speedAnim", Mathf.Abs(move));
         jump = Input.GetAxisRaw("Vertical");
+        anim.SetFloat("verticalSpeedAnim", Mathf.Abs(jump));
     }
 
     void FixedUpdate()
@@ -133,9 +134,11 @@ public class playerMove : MonoBehaviour
         if (trigStayDone) return;
         if (other.tag == "Ladder")
         {
+            
             inFrontLadder = true;
             if (jump > 0)
             {
+                anim.SetLayerWeight(2, 1);
                 rb.gravityScale = 0;
                 speed *= 0.2f;
                 jumpStr *= 0.2f;
@@ -152,6 +155,7 @@ public class playerMove : MonoBehaviour
             inFrontLadder = false;
             if (onLadder)
             {
+                anim.SetLayerWeight(2, 0);
                 rb.gravityScale = 1f;
                 speed *= 5f;
                 jumpStr *= 5f;

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4769104679044658786}
   - component: {fileID: 2256116926655587732}
   - component: {fileID: 1705307831}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: areaOfViev
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,6 +226,7 @@ MonoBehaviour:
   - {fileID: 0}
   goLeft: 1
   speed: 40
+  anim: {fileID: 0}
 --- !u!95 &370484111
 Animator:
   serializedVersion: 3
@@ -236,7 +237,7 @@ Animator:
   m_GameObject: {fileID: 4769104680181618039}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7b69650a885471240b2cfe9d4bf2f010, type: 2}
+  m_Controller: {fileID: 9100000, guid: e3ab592b3b8fdd546937a3d7c07cf0c8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -255,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1317255541445526446}
   - component: {fileID: 7561860054511799463}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Point Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
