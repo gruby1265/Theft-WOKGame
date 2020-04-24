@@ -23,6 +23,7 @@ public class HPDisplay : MonoBehaviour
         if(HPDisplayed != GameManager.HP)
         {
             if (GameManager.HP <= 0){
+                GameManager.score -= 10;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
             sprRend.size = new Vector2(GameManager.HP, 1f);
